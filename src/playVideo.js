@@ -5,5 +5,4 @@ function playVideo(stream, idVideo){
     video.play();
   }
 }
-
 module.exports = playVideo;
