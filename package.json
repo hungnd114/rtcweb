@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/hungnd114/rtcweb/issues"
   },
-  "homepage": "https://github.com/hungnd114/rtcweb#readme"
+  "homepage": "https://github.com/hungnd114/rtcweb#readme",
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  }
 }
