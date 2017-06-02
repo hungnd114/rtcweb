@@ -70,27 +70,22 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-function openCamera(){
+function openStream(){
   navigator.mediaDevices.getUserMedia({audio: false, video: true})
-  .then(stream => {
-    const video = document.getElementById('idVideo1');
-    video.srcObject = stream;
-    video.onloadmediadata = function(){
-      video.play();
-    }
-  })
+  .then(stream => playVideo(stream, 'idVideo1'))
   .catch(err => console.log(err))
 }
 
-module.exports = openCamera;
+module.exports = openStream;
 
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const openCamera = __webpack_require__(0);
-openCamera();
+const openStream = __webpack_require__(0);
+
+openStream();
 console.log("xin chao")
 
 

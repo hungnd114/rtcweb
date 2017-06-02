@@ -1,3 +1,4 @@
-const openCamera = require('./openCamera');
-openCamera();
+const openStream = require('./openStream');
+
+openStream();
 console.log("xin chao")
